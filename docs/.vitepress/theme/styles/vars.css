@@ -1,0 +1,34 @@
+ /* colors */
+:root {
+  --vp-c-accent: #35495e;
+  --vp-c-brand: #4573fe;
+  --vp-c-text-code: #4573fe;
+  /* --vp-code-block-bg: rgba(125, 125, 125, 0.04); */
+  --vp-c-disabled-bg: rgba(125, 125, 125, 0.2);
+  /* fix contrast on gray cards: used by --vp-c-text-2 */
+  --vp-c-brand-light: #3d40fe;
+  --vp-c-text-light-2: rgba(56 56 56 / 70%);
+  }
+/* title */
+:root{
+  /* --vp-home-hero-name-color: blue; */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg,#f02fc2,#6094ea);
+}
+/* logo */
+:root{
+  --vp-home-hero-image-background-image: linear-gradient(-45deg,#4a8dea 30%,rgb(108, 99, 255, .4));
+  --vp-home-hero-image-filter: blur(55px);
+}
+/* button */
+:root{
+  --vp-button-brand-border: linear-gradient(135deg,#17ead9,#6078ea);
+  --vp-button-brand-text: var(--vp-c-text-dark-1);
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-hover-border: var(--vp-c-brand-light);
+  --vp-button-brand-hover-text: var(--vp-c-text-dark-1);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+  --vp-button-brand-active-border: var(--vp-c-brand-light);
+  --vp-button-brand-active-text: var(--vp-c-text-dark-1);
+  --vp-button-brand-active-bg: var(--vp-button-brand-bg);
+}
