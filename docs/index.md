@@ -6,7 +6,7 @@ hero:
   text: Front-end Learning documents
   tagline: 保持专注, 渐进学习
   image:
-    src: ./public/team.svg
+    src: /team.svg
     alt: Logo
   actions:
     - theme: brand
