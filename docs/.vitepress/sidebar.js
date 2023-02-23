@@ -26,14 +26,15 @@ export default {
     items: [
       { text: "数据类型", link: "/jsAdvance/js0.md", hidden: true },
       { text: "深浅拷贝", link: "/jsAdvance/js1.md", hidden: true },
+      { text: "作用域和作用域链", link: "/jsAdvance/js2.md", hidden: false },
     ],
   }],
   "/Guide/": [
     {
       text: "💻开始阅读",
       items: [
-        { text: "数据类型", link: "/jsAdvance/js1.md", hidden: true },
-        { text: "深拷贝", link: "/jsAdvance/js2.md", hidden: true },
+        { text: "数据类型", link: "/jsAdvance/js0.md", hidden: true },
+        { text: "深拷贝", link: "/jsAdvance/js1.md", hidden: true },
       ],
     },
     {
