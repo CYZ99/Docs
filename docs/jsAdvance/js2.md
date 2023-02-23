@@ -21,7 +21,7 @@
 
 
 
-![scopeChain](http://rqikxs8eg.hn-bkt.clouddn.com/img/scopeChain.png)
+![function](https://rqikxs8eg.hn-bkt.clouddn.com/img/function.png)
 
 ## 作用域
 
@@ -124,7 +124,7 @@ d 输出 undefined 是因为 `块级作用域不影响变量提升`
 用域链中的最后一个对象
 
 
-![作用域嵌套](http://rqikxs8eg.hn-bkt.clouddn.com/img/%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%B5%8C%E5%A5%97.png)
+![scope](https://rqikxs8eg.hn-bkt.clouddn.com/img/scope.png)
 
 在 bar 函数解析阶段 会在 创建一个变量对象 [[scope]] + parent[[scope]]
 
