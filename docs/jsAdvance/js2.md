@@ -19,9 +19,8 @@
  *  在函数没有调用前，编译时只在 GO 生成对应的内存地址,并在调用后执行时会把函数执行上下文 (FEC) 压入调用栈中并且执行，完成后  弹栈并销毁（AO）
  * 遇到函数调用的时候会创建函数执行上下文 FEC 并放入全局上下文中这个时候需要 VO = AO 创建AO存放函数里的变量为undefined 然后开始执行函数代码，执行完后弹栈。
 
+![function](https://cyzblog-1305365553.cos.ap-guangzhou.myqcloud.com/function.png)
 
-
-![function](https://rqikxs8eg.hn-bkt.clouddn.com/img/function.png)
 
 ## 作用域
 
@@ -123,8 +122,8 @@ d 输出 undefined 是因为 `块级作用域不影响变量提升`
 则来自下一个包含环境，一直延续到全局执行环境。全局执行环境的变量对象始终都是作
 用域链中的最后一个对象
 
+![scope](https://cyzblog-1305365553.cos.ap-guangzhou.myqcloud.com/scope.png)
 
-![scope](https://rqikxs8eg.hn-bkt.clouddn.com/img/scope.png)
 
 在 bar 函数解析阶段 会在 创建一个变量对象 [[scope]] + parent[[scope]]
 
