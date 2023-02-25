@@ -27,6 +27,7 @@ export default {
       { text: "数据类型", link: "/jsAdvance/js0.md", hidden: true },
       { text: "深浅拷贝", link: "/jsAdvance/js1.md", hidden: true },
       { text: "作用域和作用域链", link: "/jsAdvance/js2.md", hidden: false },
+      { text: "this指向规则", link: "/jsAdvance/js3.md", hidden: false },
     ],
   }],
   "/Guide/": [
@@ -45,10 +46,9 @@ export default {
       ],
     },
     {
-      text: "🎡JS",
+      text: "🎡常用工具",
       items: [
-        { text: "数据类型", link: "/jsAdvance/js1.md", hidden: true },
-        { text: "深拷贝", link: "/jsAdvance/js2.md", hidden: true },
+        { text: "git", link: "/git.md", hidden: true },
       ],
     }]
 }
