@@ -1,17 +1,34 @@
-# JS复习路径
-1. 数据类型, 值类型, 引用类型
-2. 判断数据类型的方法
-3. 隐式类型转换
-4. 堆栈内存及函数底层处理机制
-5. 变量提升作用域链 this (手写 call apply bind)
-6. 闭包及其应用
-7. 柯里化和compose函数
-8. 原型原型链继承
-9. 函数的防抖和节流 (手写)
-10. 前端模块化AMD CMD commonjs ESModule
-11. 数组的常用方法 数组的去重 数组降维
-12. 深拷贝, 浅拷贝
-13. EventLoop事件循环
-14. 高阶函数
-15. promise (手写)
-16. 前端跨域
+# 手写 call apply bind new
+
+## call
+核心原理就是
+
+将原本需要执行的函数的 this 赋值给 call 传入的第一个参数的一个方法
+
+在返回这个方法的调用结果
+
+```js
+Function.prototype.mycall= function(context, ...args){
+  // 1. 对参数进行判断如果是 null 或 undefined 则将 context 视为 window
+  context = context ? Object(context) : window
+  // 2. 获取原本函数的 this
+  context.fn = this
+  // 执行 context.fn 方法
+  const res= context.fn(...args)
+  delete context.fn
+  return res
+}
+
+```
+:::tip
+未完待续
+:::
+
+
+## apply
+
+
+## bind
+
+
+## new
