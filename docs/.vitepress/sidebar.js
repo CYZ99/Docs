@@ -5,8 +5,8 @@ export default {
     collapsible: false,
     collapsed: false,
     items: [
-      { text: "TCP/IP", link: "/Networking/cn1.md", hidden: true },
-      { text: "HTTP", link: "/Networking/cn2.md", hidden: true },
+      { text: "HTTP1", link: "/Networking/http1.md", hidden: true },
+      { text: "HTTP2", link: "/Networking/http2.md", hidden: true },
     ],
   },
   {
@@ -14,8 +14,7 @@ export default {
     collapsible: false,
     collapsed: false,
     items: [
-      { text: "TCP/IP", link: "/Networking/cn1.md", hidden: true },
-      { text: "HTTP", link: "/Networking/cn2.md", hidden: true },
+      { text: "TCP/IP", link: "/Networking/tcp.md", hidden: true },
     ],
   }
   ],

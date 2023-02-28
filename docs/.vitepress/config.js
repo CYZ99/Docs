@@ -9,7 +9,7 @@ export default {
   },
   themeConfig: {
     nav: [
-      { text: '🐸 计算机网络', link: '/Networking/cn1' },
+      { text: '🐸 计算机网络', link: '/Networking/http1' },
       { text: '🎯 JS 知识', link: '/jsAdvance/js0' },
       { text: '🌈 面试题汇总', link: '/interview/' }
     ],
