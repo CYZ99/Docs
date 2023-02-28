@@ -199,7 +199,7 @@ function deepClone(originValue, map = new WeakMap()) {
   map.set(originValue, newObject)
 
   for (const key of Reflect.ownKeys(originValue)) {
-    newObject[key] = (isObject(originValue[key]) && typeof obj[key] !== 'function') ? deepClone(originValue[key], map) : originValue[key]
+    newObject[key] = (isObject(originValue[key])) ? deepClone(originValue[key], map) : originValue[key]
   }
   return newObject
 }
