@@ -88,7 +88,7 @@ console.log(a.age);
     while(true){
       if(prop === right.prototype) return true
       if(prop === null) return false
-      prop = Object.getPrototypeOf(proto)
+      prop = Object.getPrototypeOf(prop)
     }
   }
   ```
@@ -302,7 +302,7 @@ console.log(Object.is(NaN, NaN)); // true
 '1' == true
 
 题目
-1 && 2 && {} 
+1 && 2 && {}
 
 <details><summary><b>答案</b></summary>
 <p>
