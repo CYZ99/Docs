@@ -7,6 +7,7 @@ export default {
     items: [
       { text: "HTTP1", link: "/Networking/http1.md", hidden: true },
       { text: "HTTP2", link: "/Networking/http2.md", hidden: true },
+      { text: "HTTP3", link: "/Networking/http3.md", hidden: true },
     ],
   },
   {
