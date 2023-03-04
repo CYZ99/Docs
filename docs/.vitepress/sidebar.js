@@ -30,8 +30,13 @@ export default {
 				{ text: 'this指向规则一', link: '/jsAdvance/js3.md', hidden: false },
 				{ text: 'this指向规则二', link: '/jsAdvance/js4.md', hidden: false },
 				{
-					text: '手写call apply bind',
+					text: '手写call apply bind new',
 					link: '/jsAdvance/js5.md',
+					hidden: false
+				},
+				{
+					text: 'let var const的区别',
+					link: '/jsAdvance/js6.md',
 					hidden: false
 				}
 			]
