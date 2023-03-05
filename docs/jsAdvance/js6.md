@@ -70,3 +70,63 @@ console.log(obj);
 ```
 
 同样使用 `const` 定义的变量没有变量提升, 不允许重复声明 也会产生块级格式上下文, 也存在暂时性死区
+
+## 精度丢失问题
+在 JS 中浮点数的计算存在丢失问题
+0.1 + 0.2 != 0.3
+
+在 JS 中浮点数是以64位二进制数存储的,{浮点数转换为 二进制数时会出现精度丢失}
+
+`console.log((0.1).toString(2)) => 0.0001100110011001100110011001100110011001100110011001101`
+
+计算方法
+```js
+0.1 * 2 = 0.2 => 0
+0.2 * 2 = 0.4 => 0
+0.4 * 2 = 0.8 => 0
+0.8 * 2 = 1.6 => 1
+0.6 * 2 = 1.2 => 1
+0.2 * 2 = 0.4 => 0
+```
+**无穷数**
+开始出现循环 0.1 转换为2进制数,会出现循环, 最多存储64位舍弃了一些值，值本身就失去了精准度
+
+### 解决方法
+1. 使用 toFixed() 保留小数点 N 位
+2. 使用扩大系数法 `0.1 + 0.2 => 0.1 * 10 + 0.2 * 10 = 3 / 10 => 0.3`
+
+原理就是将小数乘以一定的倍数转化为 整数在除以原来的倍数,得到小数.
+
+**toFixed**
+```js
+  const num = (0.1 + 0.2).toFixed(2)
+  console.log(num)
+```
+
+**扩大系数法**
+```js
+// 获取到系数
+function getCoefficient(num) {
+  // 转换为字符串
+	num = num + ''
+  // 以小数点分割
+	let strArr = num.split('.')
+  // 获取到小数点以外的数
+	let len = strArr[1].length
+  // 计算得出倍数
+	let multiple = Math.pow(10, len) // 10 ** len
+	return multiple
+}
+
+function plus(num1, num2) {
+	// 参数处理
+	num1 = +num1
+	num2 = +num2
+	// 获取较大的 系数
+	let xi = Math.max(getCoefficient(num1), getCoefficient(num2));
+	// 相加过程
+	let sum = (num1 * xi + num2 * xi) / xi
+	return sum
+}
+
+```

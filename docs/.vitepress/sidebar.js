@@ -38,6 +38,11 @@ export default {
 					text: 'let var const的区别',
 					link: '/jsAdvance/js6.md',
 					hidden: false
+				},
+				{
+					text: '字符串常用方法',
+					link: '/jsAdvance/js7.md',
+					hidden: false
 				}
 			]
 		}
