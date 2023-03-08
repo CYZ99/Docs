@@ -57,10 +57,24 @@ export default {
 		},
 		{
 			text: '🎨CSS',
+			items: [{ text: 'CSS知识总览', link: '/h5c3/CSS.md', hidden: true }]
+		},
+		{
+			text: '🎡常用工具',
+			items: [{ text: 'git', link: '/git.md', hidden: true }]
+		}
+	],
+	'/h5c3/': [
+		{
+			text: '💻开始阅读',
 			items: [
-				{ text: 'flex布局', link: '/jsAdvance/js1.md', hidden: true },
-				{ text: 'CSS3', link: '/jsAdvance/js2.md', hidden: true }
+				{ text: '数据类型', link: '/jsAdvance/js0.md', hidden: true },
+				{ text: '深拷贝', link: '/jsAdvance/js1.md', hidden: true }
 			]
+		},
+		{
+			text: '🎨CSS',
+			items: [{ text: 'CSS知识总览', link: '/h5c3/CSS.md', hidden: true }]
 		},
 		{
 			text: '🎡常用工具',
