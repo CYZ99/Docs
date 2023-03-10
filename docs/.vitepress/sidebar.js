@@ -43,7 +43,31 @@ export default {
 					text: '字符串常用方法',
 					link: '/jsAdvance/js7.md',
 					hidden: false
+				},
+				{
+					text: '闭包',
+					link: '/jsAdvance/js8.md',
+					hidden: false
 				}
+			]
+		},
+		{
+			text: '🏷️ 数组/对象/原型链',
+			collapsible: true,
+			collapsed: true,
+			items: [
+				{ text: '数组常用方法(一)', link: '/jsAdvance/js10.md', hidden: true },
+				{ text: '数组常用方法(二)', link: '/jsAdvance/js1.md', hidden: true },
+				{ text: '原型原型链', link: '/jsAdvance/js11.md', hidden: false }
+			]
+		},
+		{
+			text: '💻DOM 和 BOM',
+			collapsible: true,
+			collapsed: true,
+			items: [
+				{ text: 'DOM', link: '/jsAdvance/js0.md', hidden: true },
+				{ text: 'BOM', link: '/jsAdvance/js1.md', hidden: true }
 			]
 		}
 	],
@@ -74,7 +98,10 @@ export default {
 		},
 		{
 			text: '🎨CSS',
-			items: [{ text: 'CSS知识总览', link: '/h5c3/CSS.md', hidden: true }]
+			items: [
+				{ text: 'CSS知识总览', link: '/h5c3/CSS.md', hidden: true },
+				{ text: 'CSS动画', link: '/h5c3/CSS animation.md', hidden: true }
+			]
 		},
 		{
 			text: '🎡常用工具',
