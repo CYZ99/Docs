@@ -74,6 +74,10 @@ var result = newSum(30, 40);
 ## new
 
 定义: new 运算符创建一个用户定义的对象类型的实例或具有构造函数的内置对象的实例。
+构造函数的返回值
+1. 如果返回一个对象,那么实例无法访问到构造函数的其他属性,实例只能访问到返回对象的属性
+2. 如果没有返回值或者返回一个 undefined 以外的数据类型的值, 实例只能访问到构造函数中的值
+
 ``` js
 function create(Constructor, ...args) {
   // 1. 创建一个新对象
@@ -82,8 +86,8 @@ function create(Constructor, ...args) {
   // obj 可以访问到构造函数原型上的属性
   obj.__proto__ = Constructor.prototype;
   // 3. 将 this 指向新创建的实例
-  Constructor.call(obj, ...args)
-  return obj
+  let ret = Constructor.call(obj, ...args)
+  return ret instanceof Object ? ret : obj
 }
 
 function Car(color) {
