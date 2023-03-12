@@ -53,12 +53,13 @@ export default {
 		},
 		{
 			text: '🏷️ 数组/对象/原型链',
-			collapsible: true,
+			collapsible: false,
 			collapsed: true,
 			items: [
 				{ text: '数组常用方法(一)', link: '/jsAdvance/js10.md', hidden: true },
 				{ text: '数组常用方法(二)', link: '/jsAdvance/js1.md', hidden: true },
-				{ text: '原型原型链', link: '/jsAdvance/js11.md', hidden: false }
+				{ text: '原型原型链', link: '/jsAdvance/js11.md', hidden: false },
+				{ text: '继承', link: '/jsAdvance/js12.md', hidden: false }
 			]
 		},
 		{
