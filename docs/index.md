@@ -22,8 +22,17 @@ features:
   - icon: ✍️
     title: JS进阶
     details: Advance JS
-  - icon: 💯
+  - icon: 📘
     title: 面试题汇总
     details: interview collecting
+  - icon: 💾
+    title: 数据结构
+    details: data struct
+  - icon: 📗
+    title: vue
+    details: vue
+  - icon: 🎰
+    title: 生活和娱乐
+    details: life 
 ---
 
