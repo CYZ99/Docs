@@ -46,24 +46,29 @@ export default {
 				},
 				{
 					text: '闭包',
-					link: '/jsAdvance/js8.md',
+					link: '/jsAdvance/js9.md',
 					hidden: false
 				}
 			]
 		},
 		{
-			text: '🏷️ 数组/对象/原型链',
+			text: '🏷️ 数组/对象/原型链/ES6+',
 			collapsible: true,
 			collapsed: true,
 			items: [
 				{ text: '数组常用方法(一)', link: '/jsAdvance/js10.md', hidden: true },
 				{ text: '数组常用方法(二)', link: '/jsAdvance/js13.md', hidden: true },
-				{ text: '数组常用的特殊操作', link: '/jsAdvance/js14.md', hidden: true },
+				{
+					text: '数组常用的特殊操作',
+					link: '/jsAdvance/js14.md',
+					hidden: true
+				},
 				{ text: '原型原型链', link: '/jsAdvance/js11.md', hidden: true },
 				{ text: '继承', link: '/jsAdvance/js12.md', hidden: true },
 				{ text: 'ES6常用知识点(一)', link: '/jsAdvance/js15.md', hidden: true },
 				{ text: 'ES6常用知识点(二)', link: '/jsAdvance/js16.md', hidden: true },
-				{ text: 'Proxy和Reflect', link: '/jsAdvance/js17.md', hidden: true}
+				{ text: 'Proxy和Reflect', link: '/jsAdvance/js17.md', hidden: true },
+				{ text: 'Promise', link: '/jsAdvance/js18.md', hidden: true }
 			]
 		},
 		{
