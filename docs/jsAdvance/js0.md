@@ -72,8 +72,15 @@ console.log(a.age);
   - 由于我们可以随意的修改原型的指向，导致检测的结果不准
   - 无法检测基本数据类型
   ```js
+    function Fn() {
+      this.x = 100;
+    }
     let arr = [];
+
     console.log(arr instanceof Array); // => true
+    Fn.prototype = Object.create(Array.prototype);
+    let f = new Fn();
+    console.log(f instanceof Array); // => false
   ```
   ::: warning
   需要注意的是， instanceof 的结果并不一定是可靠的，因为在 ECMAScript7 规范中可以通过自定义 Symbol.hasInstance 方法来覆盖默认行为。
@@ -84,6 +91,7 @@ console.log(a.age);
   ```js
   function my_instanceof(left, right){
     if(typeof left !== 'object' && left === null) return left
+    // 获取 left 对象上的原型
     let prop = Object.getPrototypeOf(left)
     while(true){
       if(prop === right.prototype) return true
@@ -107,7 +115,9 @@ console.log(a.age);
 
   方法四 **Object.prototype.toString.call([value])**
   - 标准检测数据类型的方法 Object.prototype.toString不是转换为字符串，是返回`当前实例所属类`的信息
-  - 标准检测的办法"[object Number/String/Boolean/Null/Undefined/Symbol/Object/Array/RegExp/Date/Function]"
+  - 标准检测的办法:
+
+  "[object Number/String/Boolean/Null/Undefined/Symbol/Object/Array/RegExp/Date/Function]"
 
   ```js
   let obj = {}
@@ -187,10 +197,10 @@ console.log(Boolean(NaN));
 **规则**
 
 把对象转换为数字：
-+ 先调用对象的Symbol.toPrimitive这个方法，如果不存在这个方法
-+ 再调用对象的va1ue0f获取原始值，如果获取的值不是原始值
-+ 再调用对象的toString把其变为字符串
-+ 最后再把字符串基于Number方法转换为数字
++ 先调用对象的 `Symbol.toPrimitive` 这个方法，如果不存在这个方法
++ 再调用对象的 `valueOf` 获取原始值，如果获取的值不是原始值
++ 再调用对象的 `toString` 把其变为字符串
++ 最后再把字符串基于 `Number` 方法转换为数字
 
 ```js
 let obj = {
@@ -223,10 +233,10 @@ console.log(Number(time));
 数组和普通对象没有 [Symbol.toPrimitive] 方法
 
 对象转换为字符串的规则
-1. 先调用 toString()
-2. 如果返回 引用值调用 valueOf()
-3. 如果 valueOf() 返回引用值时
-4. 去原型上找到 toString() 方法
+1. 先调用 `toString()`
+2. 如果返回 引用值调用 `valueOf()`
+3. 如果 `valueOf()` 返回引用值时
+4. 去原型上找到 `toString()` 方法
 
 ```js
   let test1 = {
