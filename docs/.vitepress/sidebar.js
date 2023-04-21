@@ -68,7 +68,9 @@ export default {
 				{ text: 'ES6常用知识点(一)', link: '/jsAdvance/js15.md', hidden: true },
 				{ text: 'ES6常用知识点(二)', link: '/jsAdvance/js16.md', hidden: true },
 				{ text: 'Proxy和Reflect', link: '/jsAdvance/js17.md', hidden: true },
-				{ text: 'Promise', link: '/jsAdvance/js18.md', hidden: true }
+				{ text: 'Promise基础', link: '/jsAdvance/js18.md', hidden: true },
+				{ text: 'async await基础', link: '/jsAdvance/js19.md', hidden: true },
+				{ text: '事件循环', link: '/jsAdvance/js20.md', hidden: true }
 			]
 		},
 		{
