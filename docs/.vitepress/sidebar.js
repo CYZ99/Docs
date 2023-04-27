@@ -12,10 +12,10 @@ export default {
 			]
 		},
 		{
-			text: '🎡TCP',
+			text: '🎡DNS',
 			collapsible: false,
 			collapsed: false,
-			items: [{ text: 'TCP/IP', link: '/Networking/tcp.md', hidden: true }]
+			items: [{ text: 'DNS', link: '/Networking/dns.md', hidden: true }]
 		}
 	],
 	'/jsAdvance/': [
