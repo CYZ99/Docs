@@ -70,7 +70,8 @@ export default {
 				{ text: 'Proxy和Reflect', link: '/jsAdvance/js17.md', hidden: true },
 				{ text: 'Promise基础', link: '/jsAdvance/js18.md', hidden: true },
 				{ text: 'async await基础', link: '/jsAdvance/js19.md', hidden: true },
-				{ text: '事件循环', link: '/jsAdvance/js20.md', hidden: true }
+				{ text: '事件循环', link: '/jsAdvance/js20.md', hidden: true },
+				{ text: '前端模块化', link: '/jsAdvance/js21.md', hidden: true }
 			]
 		},
 		{
