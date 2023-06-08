@@ -89,36 +89,39 @@ export default {
 			text: '💻开始阅读',
 			items: [
 				{ text: '数据类型', link: '/jsAdvance/js0.md', hidden: true },
+				{ text: 'this指向规则', link: '/jsAdvance/js4.md', hidden: true },
 				{ text: '深拷贝', link: '/jsAdvance/js1.md', hidden: true }
 			]
 		},
 		{
-			text: '🎨CSS',
-			items: [{ text: 'CSS知识总览', link: '/h5c3/CSS.md', hidden: true }]
+			text: '🎨计算机网络',
+			items: [
+				{ text: 'HTTP基本知识', link: '/Networking/http1.md', hidden: true },
+				{ text: 'HTTP缓存和重定向', link: '/Networking/http2.md', hidden: true },
+				{ text: 'HTTPS', link: '/Networking/http3.md', hidden: true },
+			]
 		},
 		{
-			text: '🎡常用工具',
-			items: [{ text: 'git', link: '/git.md', hidden: true }]
+			text: '🎡HTML5/CSS3',
+			items: [
+				{ text: 'CSS笔记', link: '/h5c3/CSS.md', hidden: true },
+				{ text: 'CSS动画相关', link: '/h5c3/CSS animation.md', hidden: true }
+			]
 		}
 	],
 	'/h5c3/': [
 		{
-			text: '💻开始阅读',
+			text: '💻HTML5',
 			items: [
-				{ text: '数据类型', link: '/jsAdvance/js0.md', hidden: true },
-				{ text: '深拷贝', link: '/jsAdvance/js1.md', hidden: true }
+				{ text: 'HTML5 新增的内容', link: '/h5c3/h5.md', hidden: true },
 			]
 		},
 		{
-			text: '🎨CSS',
+			text: '🎨CSS3',
 			items: [
 				{ text: 'CSS知识总览', link: '/h5c3/CSS.md', hidden: true },
 				{ text: 'CSS动画', link: '/h5c3/CSS animation.md', hidden: true }
 			]
 		},
-		{
-			text: '🎡常用工具',
-			items: [{ text: 'git', link: '/git.md', hidden: true }]
-		}
 	]
 };
