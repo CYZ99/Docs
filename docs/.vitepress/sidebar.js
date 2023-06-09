@@ -97,8 +97,12 @@ export default {
 			text: '🎨计算机网络',
 			items: [
 				{ text: 'HTTP基本知识', link: '/Networking/http1.md', hidden: true },
-				{ text: 'HTTP缓存和重定向', link: '/Networking/http2.md', hidden: true },
-				{ text: 'HTTPS', link: '/Networking/http3.md', hidden: true },
+				{
+					text: 'HTTP缓存和重定向',
+					link: '/Networking/http2.md',
+					hidden: true
+				},
+				{ text: 'HTTPS', link: '/Networking/http3.md', hidden: true }
 			]
 		},
 		{
@@ -112,9 +116,7 @@ export default {
 	'/h5c3/': [
 		{
 			text: '💻HTML5',
-			items: [
-				{ text: 'HTML5 新增的内容', link: '/h5c3/h5.md', hidden: true },
-			]
+			items: [{ text: 'HTML5 新增的内容', link: '/h5c3/h5.md', hidden: true }]
 		},
 		{
 			text: '🎨CSS3',
@@ -122,6 +124,22 @@ export default {
 				{ text: 'CSS知识总览', link: '/h5c3/CSS.md', hidden: true },
 				{ text: 'CSS动画', link: '/h5c3/CSS animation.md', hidden: true }
 			]
+		}
+	],
+	'/tool/': [
+		{
+			text: '🔑git',
+			collapsible: false,
+			collapsed: false,
+			items: [
+				{ text: 'git 的基本使用', link: '/tool/git.md', hidden: true },
+			]
 		},
+		{
+			text: '📗TypeScript',
+			collapsible: false,
+			collapsed: false,
+			items: [{ text: 'DNS', link: '/tool/基本类型.md', hidden: true }]
+		}
 	]
 };
