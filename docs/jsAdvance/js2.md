@@ -19,7 +19,7 @@
  *  在函数没有调用前，编译时只在 GO 生成对应的内存地址,并在调用后执行时会把函数执行上下文 (FEC) 压入调用栈中并且执行，完成后  弹栈并销毁（AO）
  * 遇到函数调用的时候会创建函数执行上下文 FEC 并放入全局上下文中这个时候需要 VO = AO 创建AO存放函数里的变量为undefined 然后开始执行函数代码，执行完后弹栈。
 
-![function](https://cyzblog-1305365553.cos.ap-guangzhou.myqcloud.com/function.png)
+![image-20230610091031115](https://cyzblog-1305365553.cos.ap-guangzhou.myqcloud.com/image-20230610091031115.png)
 
 
 ## 作用域
@@ -158,4 +158,20 @@ console.log(n);
 foo1() 函数作用域定义在全局作用域下,会先在自己的函数作用域下查找 n, 找不到则往全局作用域下寻找.
 </p>
 </details>
+
+
+补充一道题目
+```js
+var x = 1
+
+function foo(x, y = function () { x = 3, console.log(x); }) {
+  console.log(x); // 参数没赋值默认为undefined
+  var x = 2;
+  y() // 如果参数有默认值会形成自己的作用域输出 3,
+  console.log(x); // 2
+}
+
+foo();
+console.log(x); // 1
+```
 
