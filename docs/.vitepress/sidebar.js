@@ -66,7 +66,7 @@ export default {
 				{ text: '原型原型链', link: '/jsAdvance/js11.md', hidden: true },
 				{ text: '继承', link: '/jsAdvance/js12.md', hidden: true },
 				{ text: 'ES6常用知识点(一)', link: '/jsAdvance/js15.md', hidden: true },
-				{ text: 'ES6常用知识点(二)', link: '/jsAdvance/js16.md', hidden: true },
+				{ text: 'ES6常用知识点(二)(一)(一)', link: '/jsAdvance/js16.md', hidden: true },
 				{ text: 'Proxy和Reflect', link: '/jsAdvance/js17.md', hidden: true },
 				{ text: 'Promise基础', link: '/jsAdvance/js18.md', hidden: true },
 				{ text: 'async await基础', link: '/jsAdvance/js19.md', hidden: true },
@@ -133,13 +133,14 @@ export default {
 			collapsed: false,
 			items: [
 				{ text: 'git 的基本使用', link: '/tool/git.md', hidden: true },
+				{ text: 'git 的分支管理', link: '/tool/gitbranch.md', hidden: true }
 			]
 		},
 		{
 			text: '📗TypeScript',
 			collapsible: false,
 			collapsed: false,
-			items: [{ text: 'DNS', link: '/tool/基本类型.md', hidden: true }]
+			items: [{ text: 'TS的基本类型', link: '/tool/基本类型.md', hidden: true }]
 		}
 	]
 };
