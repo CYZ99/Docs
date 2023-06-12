@@ -79,8 +79,8 @@ export default {
 			collapsible: true,
 			collapsed: true,
 			items: [
-				{ text: 'DOM', link: '/jsAdvance/js0.md', hidden: true },
-				{ text: 'BOM', link: '/jsAdvance/js1.md', hidden: true }
+				{ text: 'DOM', link: '/jsAdvance/DOM/1.md', hidden: true },
+				{ text: 'BOM', link: '/jsAdvance/BOM/1.md', hidden: true }
 			]
 		}
 	],
