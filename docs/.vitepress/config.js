@@ -11,7 +11,7 @@ export default {
 		nav: [
 			{ text: '🐸 计算机网络', link: '/Networking/http1' },
 			{ text: '🎯 JS 知识', link: '/jsAdvance/js0' },
-			{ text: '🌈 vue知识点汇总', link: '/interview/' },
+			{ text: '🌈 vue知识点汇总', link: '/vue/vue基础知识' },
 			{ text: '🎰 常用工具', link: '/tool/git.md' },
 			{ text: '📗 C 语言', link: '/c/c1.md' },
 		],
