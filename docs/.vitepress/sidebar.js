@@ -5,10 +5,10 @@ export default {
 			collapsible: false,
 			collapsed: false,
 			items: [
-				{ text: 'HTTP1', link: '/Networking/http1.md', hidden: true },
-				{ text: 'HTTP2', link: '/Networking/http2.md', hidden: true },
-				{ text: 'HTTP3', link: '/Networking/http3.md', hidden: true },
-				{ text: 'HTTP4', link: '/Networking/http4.md', hidden: true }
+				{ text: 'HTTP基础知识', link: '/Networking/http1.md', hidden: true },
+				{ text: 'HTTP缓存重定向', link: '/Networking/http2.md', hidden: true },
+				{ text: 'HTTPS', link: '/Networking/http3.md', hidden: true },
+				{ text: 'HTTP1.1/HTTP2', link: '/Networking/http4.md', hidden: true }
 			]
 		},
 		{
