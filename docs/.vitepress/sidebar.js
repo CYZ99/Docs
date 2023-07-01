@@ -102,7 +102,9 @@ export default {
 					link: '/Networking/http2.md',
 					hidden: true
 				},
-				{ text: 'HTTPS', link: '/Networking/http3.md', hidden: true }
+				{ text: 'HTTPS', link: '/Networking/http3.md', hidden: true },
+				{ text: 'HTTP1.1/HTTP2', link: '/Networking/http4.md', hidden: true },
+				{ text: 'TCP基础知识', link: '/Networking/http4.md', hidden: true },
 			]
 		},
 		{
@@ -133,7 +135,8 @@ export default {
 			collapsed: false,
 			items: [
 				{ text: 'git 的基本使用', link: '/tool/git.md', hidden: true },
-				{ text: 'git 的分支管理', link: '/tool/gitbranch.md', hidden: true }
+				{ text: 'git 的分支管理', link: '/tool/gitbranch.md', hidden: true },
+				{ text: 'git 冲突问题及解决方式', link: '/tool/git合并冲突问题.md', hidden: true }
 			]
 		},
 		{
