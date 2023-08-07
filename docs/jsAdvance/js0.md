@@ -66,9 +66,9 @@ console.log(a.age);
   想要正确的识别 `null` 可以使用 `===` 运算符 或者 Object.propotype.toString()
   :::
   方法二: **instanceof**
+  - 左边的对象实例的原型是否在右边构造函数原型上
   - instanceof 检测当前实例是否属于这个类的
   - 底层机制： `只要当前类出现在原型链上，结果都是 true`
-  - 无法检测对象是普通对象 还是特殊对象如  Array
   - 由于我们可以随意的修改原型的指向，导致检测的结果不准
   - 无法检测基本数据类型
   ```js
@@ -76,11 +76,10 @@ console.log(a.age);
       this.x = 100;
     }
     let arr = [];
-
     console.log(arr instanceof Array); // => true
     Fn.prototype = Object.create(Array.prototype);
     let f = new Fn();
-    console.log(f instanceof Array); // => false
+    console.log(f instanceof Array); // => true
   ```
   ::: warning
   需要注意的是， instanceof 的结果并不一定是可靠的，因为在 ECMAScript7 规范中可以通过自定义 Symbol.hasInstance 方法来覆盖默认行为。

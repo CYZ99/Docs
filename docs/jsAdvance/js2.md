@@ -168,7 +168,7 @@ foo1() 函数作用域定义在全局作用域下,会先在自己的函数作用
 var x = 1
 
 function foo(x, y = function () { x = 3, console.log(x); }) {
-  console.log(x); // 参数没赋值默认为undefined
+  console.log(x); // 变量提升
   var x = 2;
   y() // 如果参数有默认值会形成自己的作用域输出 3,
   console.log(x); // 2

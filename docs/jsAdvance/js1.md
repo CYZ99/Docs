@@ -136,8 +136,6 @@ function deepClone(originValue) {
   }
 
   const newObject = Array.isArray(originValue) ? [] : {}
-  // 没有源对象 将源对象 作为 key 新对象作为值
-  map.set(originValue, newObject)
   // 使用 Reflect.ownKeys 可以遍历到 Symbol 类型的键,和不可以枚举的 属性
   for (const key of Reflect.ownKeys(originValue)) {
     newObject[key] = deepClone(originValue[key])
